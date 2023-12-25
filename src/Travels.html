@@ -4,82 +4,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Travels</title>
+    <title>Travel</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-dark">
     <header>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
         <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
+            <img class="d-inline-block align-top" width="100" src="/src/Images/name-logo.png" alt="Me">
         </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
+        <button class="navbar-toggler"id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 0 3 12h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5zm0-4A.5.5 0 0 0 3 8h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5zm0-4A.5.5 0 0 0 3 4h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5z"/>
+        </svg>   
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex w-100 justify-content-end px-md-2">
+                <li class="nav-item active"><a href="/src/Home.html" class="nav-link text-light">Home</a></li>
+                <li class="nav-item"><a href="/src/Accomp.html" class="nav-link  text-light">Accomplishemnts</a></li>
+                <li class="nav-item"><a href="/src/Hobbies.html" class="nav-link text-light ">Hobbies</a></li>
+                <li class="nav-item"><a href="/src/Travels.html" class="nav-link  text-warning active">Travels</a></li>
+                <li class="nav-item"><a href="/src/Photography.html" class="nav-link text-light ">Photography</a></li>
             </ul>
+        </div>
         </nav>
     </header>
-    <main>
-        <h1>Places I have been</h1>
-        <div id="first-travel">
-            <img src="/src/Images/debreziet.jpg" alt="Travel image">
-            <h2>Debrezeit</h2>
+    <main class="container-fluid p-3 text-white">
+        <h1 class="text-center display-4 fw-bold">Places I have been</h1>
+
+        <div class="d-lg-none">
+            <div id="first-travel" class="row">
+                <figure class="col-sm-6 my-auto">
+                    <a href="/src/Images/debreziet.jpg"><img src="/src/Images/debreziet.jpg" class="img-fluid" alt="Travel image"></a> 
+                    <figcaption class="text-primary text-center">Fig: Debreziet, Ethiopia</figcaption>
+                </figure>
+                <aside class="col-sm-6">
+                    <h2 class="text-center">Debrezeit</h2>
+                    <p>
+                        <span class="text-warning display-5 fw-bold">M</span>y journey to Debre Zeit was a captivating adventure filled with cultural immersion and scenic beauty. The vibrant streets echoed with the rhythm of daily life, offering glimpses into the local traditions and bustling markets. Exploring the serene landscapes surrounding the town, from the tranquil lakeshores to the lush countryside, provided moments of tranquility and breathtaking views. Engaging with the warm-hearted locals enriched my experience, leaving me with cherished memories of their hospitality and the captivating charm of Debre Zeit's landscapes.
+                    </p>
+                </aside>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+            <div id="first-travel-font-changed" class="row">
+                <figure class="col-sm-6 my-auto">
+                    <a href="/src/Images/debreziet.jpg"><img src="/src/Images/debreziet.jpg" class="img-fluid" alt="Travel image"></a> 
+                    <figcaption class="text-primary text-center">Fig: Debreziet, Ethiopia</figcaption>
+                </figure>
+                <aside class="col-sm-6 my-auto">
+                    <h2 class="text-center display-6 fw-bold">Debrezeit</h2>
+                    <p class="fs-3 d-sm">
+                        <span class="text-warning display-5 fw-bold">M</span>y journey to Debre Zeit was a captivating adventure filled with cultural immersion and scenic beauty. The vibrant streets echoed with the rhythm of daily life, offering glimpses into the local traditions and bustling markets. Exploring the serene landscapes surrounding the town, from the tranquil lakeshores to the lush countryside, provided moments of tranquility and breathtaking views. Engaging with the warm-hearted locals enriched my experience, leaving me with cherished memories of their hospitality and the captivating charm of Debre Zeit's landscapes.
+                    </p>
+                </aside>
+            </div>
+        </div>
+        <div id="second-travel" class="d-sm-none row">
+            <figure class="col-sm-6 my-auto">
+                <a href="/src/Images/German.jpg"><img src="/src/Images/German.jpg" class="img-fluid" alt="Travel image"></a>
+                <figcaption class="text-primary text-center">Fig: Darmstadt, Germany</figcaption>
+            </figure>
             <aside>
+                <h2 class="text-center">Germany</h2>
                 <p>
-                    My journey to Debre Zeit was a captivating adventure filled with cultural immersion and scenic beauty. The vibrant streets echoed with the rhythm of daily life, offering glimpses into the local traditions and bustling markets. Exploring the serene landscapes surrounding the town, from the tranquil lakeshores to the lush countryside, provided moments of tranquility and breathtaking views. Engaging with the warm-hearted locals enriched my experience, leaving me with cherished memories of their hospitality and the captivating charm of Debre Zeit's landscapes.
+                    <span class="text-warning display-5 fw-bold">M</span>y travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
                 </p>
             </aside>
         </div>
-        <div id="second-travel">
-            <img src="/src/Images/German.jpg" alt="Travel image">
-            <h2>Germany</h2>
-            <aside>
-                <p>
-                    My travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
-                </p>
-            </aside>
-        </div>
-        <div id="third-travel">
-            <img src="/src/Images/France.jpg" alt="Travel image">
-            <h2>France</h2>
-            <aside>
-                <p>
-                    My journey to France was an enchanting odyssey through art, history, and exquisite landscapes. From strolling along the romantic streets of Paris, admiring the Eiffel Tower's grandeur, to exploring the stunning beauty of the French Riviera, each moment was a feast for the senses. The rich cultural tapestry, manifested in museums like the Louvre and the artistic allure of Montmartre, captivated me. Sampling French cuisine and sipping coffee at charming cafés added to the allure of this remarkable country. France's elegance, artistry, and diverse landscapes made it an unforgettable adventure.
-                </p>
-            </aside>
-        </div>
-        <h1>Places I wanna Go</h1>
-        <div id="First-want">
-            <img src="/src/Images/Bali.png" alt="Travel image">
-            <h2>Bali</h2>
-            <aside>
-                <p>
-                    Bali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
-                </p>
-            </aside>
-        </div>
-        </main>
-        <footer>
-            <div class="socialmedia">
-                <div class="icon">
-                    <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
-                </div>
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
+
+
+
+
+        <div class="d-none d-sm-block">
+            <div class="d-lg-none">
+                <div id="second-travel-reversed" class="row">
+                    <figure class="col-sm-6 order-2 my-auto">
+                        <a href="/src/Images/German.jpg"><img src="/src/Images/German.jpg" class="img-fluid" alt="Travel image"></a>
+                        <figcaption class="text-primary text-center">Fig: Darmstadt, Germany</figcaption>
+                    </figure>
+                    <aside class="col-sm-6 order-1 my-auto">
+                        <h2 class="text-center display-6 fw-bold">Germany</h2>
+                        <p>
+                            <span class="text-warning display-5 fw-bold">M</span>y travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
+                        </p>
+                    </aside>
                 </div>
             </div>
-    
-            <div class="contact">
-                    <div class="Name">Dagmawi Elias</div>
-                    <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                    <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                    <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
+
+
+            <div class="d-none d-lg-block">
+                <div id="second-travel-reversed-font-changed" class="row">
+                    <figure class="col-sm-6 order-2 my-auto">
+                        <a href="/src/Images/German.jpg"><img src="/src/Images/German.jpg" class="img-fluid" alt="Travel image"></a>
+                        <figcaption class="text-primary text-center">Fig: Darmstadt, Germany</figcaption>
+                    </figure>
+                    <aside class="col-sm-6 order-1 my-auto">
+                        <h2 class="text-center display-6 fw-bold">Germany</h2>
+                        <p class="fs-3 d-none d-sm-block text-justify">
+                            <span class="text-warning display-2 fw-bold">M</span>y travel to Germany was an incredible adventure. Exploring historic sites like the Brandenburg Gate and experiencing the medieval charm of towns like Rothenburg ob der Tauber was truly mesmerizing. The landscapes, from the Black Forest to the scenic Rhine Valley, were breathtaking. Engaging with locals and savoring the delightful cuisine enriched my experience. Germany's blend of history, culture, and stunning scenery left an indelible mark on my heart.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-lg-none">
+            <div id="third-travel" class="row">
+                <figure class="col-sm-6 my-auto my-auto">
+                    <a href="/src/Images/France.jpg"><img src="/src/Images/France.jpg" class="img-fluid" alt="Travel image"></a>
+                    <figcaption class="text-primary text-center">Fig: strasbourg,France</figcaption>
+                </figure>
+
+                <aside class="col-sm-6 my-auto">
+                    <h2 class="text-center">France</h2>
+                    <p>
+                        <span class="text-warning display-5 fw-bold">M</span>y journey to France was an enchanting odyssey through art, history, and exquisite landscapes. From strolling along the romantic streets of Paris, admiring the Eiffel Tower's grandeur, to exploring the stunning beauty of the French Riviera, each moment was a feast for the senses. The rich cultural tapestry, manifested in museums like the Louvre and the artistic allure of Montmartre, captivated me. Sampling French cuisine and sipping coffee at charming cafés added to the allure of this remarkable country. France's elegance, artistry, and diverse landscapes made it an unforgettable adventure.
+                    </p>
+                </aside>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+            <div id="third-travel-font-changed" class="row">
+                <figure class="col-sm-6 my-auto">
+                    <a href="/src/Images/France.jpg"><img src="/src/Images/France.jpg" class="img-fluid" alt="Travel image"></a>
+                    <figcaption class="text-primary text-center">Fig: strasbourg,France</figcaption>
+                </figure>
+                <aside class="col-sm-6 my-auto">
+                    <h2 class="text-center display-6 fw-bold">France</h2>
+                    <p class="fs-3 d-sm">
+                        <span class="text-warning display-5 fw-bold">M</span>y journey to France was an enchanting odyssey through art, history, and exquisite landscapes. From strolling along the romantic streets of Paris, admiring the Eiffel Tower's grandeur, to exploring the stunning beauty of the French Riviera, each moment was a feast for the senses. The rich cultural tapestry, manifested in museums like the Louvre and the artistic allure of Montmartre, captivated me. Sampling French cuisine and sipping coffee at charming cafés added to the allure of this remarkable country. France's elegance, artistry, and diverse landscapes made it an unforgettable adventure.
+                    </p>
+                </aside>
+            </div>
+        </div>
+
+
+
+        <h1 class="text-center display-4 fw-bold text-center ">Places I wanna Go</h1>
+
+        <div id="first-want" class="d-sm-none">
+            <figure class="col-sm-6">
+                <a href="/src/Images/Bali.png"><img src="/src/Images/Bali.png" class="img-fluid" alt="Travel image"></a>
+                <figcaption class="text-primary text-center">Fig: Bali, Indonesia</figcaption>
+            </figure>
+            <aside class="col-sm-6">
+                <h2 class="text-center">Bali</h2>
+                <p>
+                    <span class="text-warning display-5 fw-bold">B</span>ali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
+                </p>
+            </aside>
+        </div>
+
+
+
+        <div class="d-none d-sm-block">
+            <div class="d-lg-none">
+                <div id="first-want-reversed" class="row">
+                    <figure class="col-sm-6 order-2 my-auto">
+                        <a href="/src/Images/Bali.png"><img src="/src/Images/Bali.png" class="img-fluid" alt="Travel image"></a>
+                        <figcaption class="text-primary text-center">Fig: Bali, Indonesia</figcaption>
+                    </figure>
+                    <aside class="col-sm-6 my-auto">
+                        <h2 class="text-center display-6 fw-bold">Bali</h2>
+                        <p>
+                            <span class="text-warning display-5 fw-bold">B</span>ali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="d-none d-lg-block">
+                <div id="first-want-reversed-font-changed" class="row">
+                    <figure class="col-sm-6 order-2 my-auto">
+                        <img src="/src/Images/Bali.png" class="img-fluid" alt="Travel image">
+                        <figcaption class="text-primary text-center">Fig: Bali, Indonesia</figcaption>
+                    </figure>
+                    <aside class="col-sm-6 order-1 my-auto">
+                        <h2 class="text-center display-6 fw-bold">Bali</h2>
+                        <p class="fs-3 d-none d-sm-block text-justify">
+                            <span class="text-warning display-2 fw-bold">B</span>ali's allure lies in its tranquil beauty and rich culture. Its stunning landscapes, from lush rice terraces to beautiful beaches, promise relaxation and exploration. The island's spiritual essence and vibrant traditions, coupled with warm hospitality and delicious cuisine, make Bali an irresistible destination for those seeking serenity and adventure in a breathtaking setting.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer  class="bg-secondary mt-6 py-6 text-white text-cente row d-sm-none">
+            <div class="container-fluid">
+                <div class="row flex-column">
+                    <div class="row">
+                        <div class="col-md-6">        
+                            <div class="row justify-content-center d-sm-flex">
+                                <div class="col-4 w-25">                                            
+                                    <a href="https://www.instagram.com/dagmawi_elias/" class="d-flex justify-content-center">
+                                        <img src="/src/Images/instagram.svg" class="img-fluid w-50" alt="Instagram Icon">
+                                    </a>
+                                </div>
+                                <div class="col-4 w-25">
+                                    <a href="https://twitter.com/elias_dagmawi" class="d-flex justify-content-center">
+                                        <img src="/src/Images/twitter.svg" class="img-fluid w-50" alt="Twitter Icon">
+                                    </a>
+                                </div>
+                                <div class="col-4 w-25">
+                                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="d-flex justify-content-center">
+                                        <img src="/src/Images/linkedin.svg" class="img-fluid w-50" alt="Linkedin Icon">
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 container-fluid">
+                    <div class="col mt-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/phone-solid.svg" class="img-fluid mr-2 w-25" alt="phone logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="tel:+251-911-110-650" class="text-white text-decoration-none">Phone Number: +(251) 911-1106-50</a>
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/at-solid.svg" class="img-fluid mr-2 w-25" alt="@ logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                    <a href="mailto:dagmawielias2@gmail.com" class="text-white text-decoration-none">dagmawielias2@gmail.com</a> 
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/location-dot-solid.svg" class="img-fluid mr-2 w-25" alt="location logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-white text-decoration-none">
+                                    Addis Ababa Institute of Technology
+                                </a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
+
+        <!-- footer of above tablet -->
+
+        <footer class="container-fluid bg-secondary mt-6 py-6 d-none d-sm-block">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="col-4 w-25">
+                            <a href="https://www.instagram.com/dagmawi_elias/">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/instagram.svg" class="img-fluid mx-auto d-block w-50" alt="Instagram Icon">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 w-25">
+                            <a href="https://twitter.com/elias_dagmawi">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/twitter.svg" class="img-fluid mx-auto d-block w-50" alt="Twitter Icon">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 w-25">
+                            <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/linkedin.svg" class="img-fluid mx-auto d-block w-50" alt="Linkedin Icon">
+                                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/phone-solid.svg" class="img-fluid mr-2 w-50" alt="phone logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="tel:+251-911-110-650" class="text-white text-decoration-none">Phone Number: +(251) 911-1106-50</a>
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/at-solid.svg" class="img-fluid mr-2 w-50" alt="@ logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                    <a href="mailto:dagmawielias2@gmail.com" class="text-white text-decoration-none">dagmawielias2@gmail.com</a> 
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/location-dot-solid.svg" class="img-fluid mr-2 w-50" alt="location logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-white text-decoration-none">
+                                    Addis Ababa Institute of Technology
+                                </a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/src/JavaScript/Navigation.js"></script>
     </body>
 </html>

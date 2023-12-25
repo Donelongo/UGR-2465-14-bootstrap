@@ -4,78 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./Images/name-logo.png">
-    <title>Photography</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-dark">
     <header>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black">
         <div class="logo-image">
-            <img src="/src/Images/name-logo.png" alt="Me">
+            <img class="d-inline-block align-top" width="100" src="/src/Images/name-logo.png" alt="Me">
         </div>
-        <nav class="Navbar">
-            <ul>
-                <li><a href="/src/Home.html">Home</a></li>
-                <li><a href="/src/Accomp.html">Accomplishemnts</a></li>
-                <li><a href="/src/Hobbies.html">Hobbies</a></li>
-                <li><a href="/src/Travels.html">Travels</a></li>
-                <li><a href="/src/Photography.html">Photography</a></li>
+        <button class="navbar-toggler"id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 0 3 12h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5zm0-4A.5.5 0 0 0 3 8h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5zm0-4A.5.5 0 0 0 3 4h10a.5.5 0 0 0 0-1H3a.5.5 0 0 0-.5.5z"/>
+        </svg>   
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex w-100 justify-content-end px-md-2">
+                <li class="nav-item active"><a href="/src/Home.html" class="nav-link text-light">Home</a></li>
+                <li class="nav-item"><a href="/src/Accomp.html" class="nav-link text-light ">Accomplishemnts</a></li>
+                <li class="nav-item"><a href="/src/Hobbies.html" class="nav-link text-light ">Hobbies</a></li>
+                <li class="nav-item"><a href="/src/Travels.html" class="nav-link text-light ">Travels</a></li>
+                <li class="nav-item"><a href="/src/Photography.html" class="nav-link  text-warning active ">Photography</a></li>
             </ul>
+        </div>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid">
         <div>
+            <p class="text-white">
+                <span class="text-warning display-5 fw-bold">P</span>hotography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words. 
+            </p>
             <p>
-                Photography is my lens to the world, a hobby turned passion. Through the camera's eye, I capture stories, emotions, and fleeting moments. Exploring different angles and settings, I unravel the beauty in everyday scenes. Each click is a creative expression, a way to freeze time and share unique perspectives. In photography, I find an art form that allows me to convey emotions without words.  
+                Here are some of my works, you can scroll to find more:-   
             </p>
         </div>
-        <div class="images">
-            <div id="first-image">
-                <img src="/src/Images/IMG_1025.JPG" alt="my-photography">
+
+        <div class="photos">
+            <div class="photos__landscape-carousel all-carousel d-grid">
+                <div class="row">
+                    <button id="carousel-landscape-prev" class="col-1 border-0 photos__carousel-landscape-prev carousel-button bg-transparent">
+                        <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="2rem" width="2rem" fill="white" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                            <path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                    </button>
+                    <div class="col-10">
+                        <div id="first-image" class="carouselIMG landscape">
+                            <figure class="photos__landscape-carousel__slide d-grid justify-content-center">
+                                <a href="/src/Images/IMG_1025.JPG"><img class="image sliding-image img-fluid" src="/src/Images/IMG_1025.JPG" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div id="second-image" class="carouselIMG landscape d-none">
+                            <figure class="photos__landscape-carousel__slide d-grid justify-content-center">
+                                <a href="/src/Images/IMG_20210212_092836_623.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20210212_092836_623.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                        <div id="thrird-image" class="carouselIMG landscape d-none">
+                            <figure class="photos__landscape-carousel__slide d-grid justify-content-center">
+                                <a href="/src/Images/IMG_20210212_092844_876.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20210212_092844_876.jpg" alt="my-photography"></a>
+                            </figure>
+                        </div>
+                    </div>
+                    <button id="carousel-landscape-next" class="col-1 border-0 photos__carousel-landscape-next carousel-button bg-transparent">
+                        <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="2rem" width="2rem" fill="white" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                    </button>
+                </div>
             </div>
-            <div id="second-image">
-                <img src="/src/Images/IMG_20210212_092826_692.jpg" alt="my-photography">
-            </div>
-            <div id="third-image">
-                <img src="/src/Images/IMG_20210212_092836_623.jpg" alt="my-photography">
-            </div>
-            <div id="fourth-image">
-                <img src="/src/Images/IMG_20210212_092844_876.jpg" alt="my-photography">
-            </div>
-            <div id="fifth-image">
-                <img src="/src/Images/IMG_20211221_172455.jpg" alt="my-photography">
-            </div>
-            <div id="sixth-image">
-                <img src="/src/Images/IMG_20220103_074112.jpg" alt="my-photography">
-            </div>
-            <div id="seventh-image">
-                <img src="/src/Images/IMG_20220125_110128.jpg" alt="my-photography">
-            </div>
-            <div id="eith-image">
-                <img src="/src/Images/IMG_20220126_133131.jpg" alt="my-photography">
-            </div>
-            <div id="nineth-image">
-                <img src="/src/Images/IMG_20220327_200356.jpg" alt="my-photography">
+
+            <div class="photos__portrait-carousel all-carousel row mt-4">
+                
+                <button id="carousel-portrait-prev" class="col-1 border-0 photos__carousel-portrait-prev carousel-button bg-transparent">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="2rem" width="2rem" fill="white"  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z"/></svg>
+                </button>
+                <div class="col-10">
+                    <div id="fourth-image" class="carouselIMG portrait">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20210212_092826_692.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20210212_092826_692.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                    <div id="fifth-image" class="carouselIMG portrait d-none">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20211221_172455.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20211221_172455.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                    <div id="sixth-image" class="carouselIMG portrait d-none">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20220103_074112.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20220103_074112.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                    <div id="seventh-image" class="carouselIMG portrait d-none">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20220125_110128.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20220125_110128.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                    <div id="eith-image" class="carouselIMG portrait d-none">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20220126_133131.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20220126_133131.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                    <div id="nineth-image" class="carouselIMG portrait d-none">
+                        <figure class="photos__portrait-carousel__slide d-grid justify-content-center">
+                            <a href="/src/Images/IMG_20220327_200356.jpg"><img class="image sliding-image img-fluid" src="/src/Images/IMG_20220327_200356.jpg" alt="my-photography"></a>
+                        </figure>
+                    </div>
+                </div>
+                <button id="carousel-portrait-next" class="col-1 border-0 photos__carousel-portrait-next carousel-button bg-transparent">
+                    <svg class="photos__c-Btn" xmlns="http://www.w3.org/2000/svg" height="2rem" width="2rem" fill="white"  viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+                </button>
             </div>
         </div>
         </main>
-        <footer>
-            <div class="socialmedia">
-                <div class="icon">
-                    <a href="https://www.instagram.com/dagmawi_elias/"><img src="/src/Images/instagram.svg" alt="Instagram Icon"></a>
+        <footer  class="bg-secondary mt-6 py-6 text-white text-cente row d-sm-none">
+            <div class="container-fluid">
+                <div class="row flex-column">
+                    <div class="row">
+                        <div class="col-md-6">        
+                            <div class="row justify-content-center d-sm-flex">
+                                <div class="col-4 w-25">                                            
+                                    <a href="https://www.instagram.com/dagmawi_elias/" class="d-flex justify-content-center">
+                                        <img src="/src/Images/instagram.svg" class="img-fluid w-50" alt="Instagram Icon">
+                                    </a>
+                                </div>
+                                <div class="col-4 w-25">
+                                    <a href="https://twitter.com/elias_dagmawi" class="d-flex justify-content-center">
+                                        <img src="/src/Images/twitter.svg" class="img-fluid w-50" alt="Twitter Icon">
+                                    </a>
+                                </div>
+                                <div class="col-4 w-25">
+                                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/" class="d-flex justify-content-center">
+                                        <img src="/src/Images/linkedin.svg" class="img-fluid w-50" alt="Linkedin Icon">
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
                 </div>
-                <div class="icon">
-                    <a href="https://twitter.com/elias_dagmawi"><img src="/src/Images/twitter.svg" alt="Twitter Icon"></a>
+
+
+                <div class="col-md-6 container-fluid">
+                    <div class="col mt-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/phone-solid.svg" class="img-fluid mr-2 w-25" alt="phone logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="tel:+251-911-110-650" class="text-white text-decoration-none">Phone Number: +(251) 911-1106-50</a>
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/at-solid.svg" class="img-fluid mr-2 w-25" alt="@ logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                    <a href="mailto:dagmawielias2@gmail.com" class="text-white text-decoration-none">dagmawielias2@gmail.com</a> 
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="w-25">
+                                <figure class="col-lg-3 mb-0">
+                                    <img src="/src/Images/location-dot-solid.svg" class="img-fluid mr-2 w-25" alt="location logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-white text-decoration-none">
+                                    Addis Ababa Institute of Technology
+                                </a>
+                            </aside>
+                        </div>
+                    </div>
                 </div>
-                <div class="icon">
-                    <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/"><img src="/src/Images/linkedin.svg" alt="Linkedin Icon"></a>
-                </div>
-            </div>
-    
-            <div class="contact">
-                    <div class="Name">Dagmawi Elias</div>
-                    <div class="Phone Number"><img src="/src/Images/phone-solid.svg" alt="phone logo"></div>
-                    <div class="email"><img src="/src/Images/at-solid.svg" alt="@ logo"></div>
-                    <div class="address"><img src="/src/Images/location-dot-solid.svg" alt="location logo"></div>
             </div>
         </footer>
+
+        <!-- footer of above tablet -->
+
+        <footer class="container-fluid bg-secondary mt-6 py-6 d-none d-sm-block">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="col-4 w-25">
+                            <a href="https://www.instagram.com/dagmawi_elias/">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/instagram.svg" class="img-fluid mx-auto d-block w-50" alt="Instagram Icon">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 w-25">
+                            <a href="https://twitter.com/elias_dagmawi">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/twitter.svg" class="img-fluid mx-auto d-block w-50" alt="Twitter Icon">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-4 w-25">
+                            <a href="https://www.linkedin.com/in/dagmawi-elias-842699242/">
+                                <figure class="col-lg-5 align-items-end">
+                                    <img src="/src/Images/linkedin.svg" class="img-fluid mx-auto d-block w-50" alt="Linkedin Icon">
+                                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/phone-solid.svg" class="img-fluid mr-2 w-50" alt="phone logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="tel:+251-911-110-650" class="text-white text-decoration-none">Phone Number: +(251) 911-1106-50</a>
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/at-solid.svg" class="img-fluid mr-2 w-50" alt="@ logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                    <a href="mailto:dagmawielias2@gmail.com" class="text-white text-decoration-none">dagmawielias2@gmail.com</a> 
+                            </aside>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25">
+                                <figure class="col-lg-3">
+                                    <img src="/src/Images/location-dot-solid.svg" class="img-fluid mr-2 w-50" alt="location logo">
+                                </figure>
+                            </div>
+                            <aside class="col-lg-8 align-self-lg-start">
+                                <a href="https://maps.app.goo.gl/nqPtWeyDfjUmK8TCA" class="text-white text-decoration-none">
+                                    Addis Ababa Institute of Technology
+                                </a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/src/JavaScript/Navigation.js"></script>
+        <script src="/src/JavaScript/Photography.js"></script>
     </body>
 </html>
